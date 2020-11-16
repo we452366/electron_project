@@ -1,0 +1,24 @@
+{
+  "name": "electron_project",
+  "version": "1.0.0",
+  "description": "electron尝鲜",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we452366/electron_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/we452366/electron_project/issues"
+  },
+  "homepage": "https://github.com/we452366/electron_project#readme",
+  "devDependencies": {
+    "electron": "^10.1.5"
+  }
+}
