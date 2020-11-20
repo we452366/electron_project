@@ -2,13 +2,16 @@
   "name": "electron_project",
   "version": "1.0.0",
   "description": "electron尝鲜",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "electron ./main.js",
     "start:main": "electron ./app/main",
     "start:render": "cd app/render && npm run start",
-    "start": "concurrently \"npm run start:render\" \" wait-on http://localhost:3000 && npm run start:main \" "
+    "start": "concurrently \"npm run start:render\" \" wait-on http://localhost:3000 && npm run start:main \" ",
+    "build" : "electron-packager ./ myapp --out ./win --electron-version 10.1.5 --overwrite"
   },
+  "homepage": ".",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/we452366/electron_project.git"
@@ -19,9 +22,9 @@
   "bugs": {
     "url": "https://github.com/we452366/electron_project/issues"
   },
-  "homepage": "https://github.com/we452366/electron_project#readme",
   "devDependencies": {
-    "electron": "^10.1.5"
+    "electron": "^10.1.5",
+    "electron-packager": "^15.1.0"
   },
   "dependencies": {
     "electron-is-dev": "^1.2.0"
