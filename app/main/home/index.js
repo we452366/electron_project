@@ -1,6 +1,7 @@
 const { BrowserWindow } = require('electron');
 const isDev = require('electron-is-dev');
 const path = require('path');
+const url = require('url');
 
 let home = null;
 
@@ -16,7 +17,9 @@ const create = () => {
     if(isDev) {
         home.loadURL('http://localhost:3000');
     } else {
-        home.loadFile(path.resolve(__dirname, './index.html'))
+        home.loadURL(url.format({
+            pathname: path.join(__dirname, '../../render/build/index.html')
+        }))
     }
 };
 
