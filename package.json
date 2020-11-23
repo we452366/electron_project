@@ -5,11 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "electron ./main.js",
-    "start:main": "electron ./app/main",
-    "start:render": "cd app/render && npm run start",
-    "start": "concurrently \"npm run start:render\" \" wait-on http://localhost:3000 && npm run start:main \" ",
-    "build" : "electron-packager ./ myapp --out ./win --electron-version 10.1.5 --overwrite"
+    "start": "electron ./app/main",
+    "build": "electron-packager ./ myapp --out ./win --electron-version 10.1.5 --overwrite"
   },
   "homepage": ".",
   "repository": {

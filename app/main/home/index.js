@@ -14,13 +14,11 @@ const create = () => {
         }
     });
 
-    if(isDev) {
-        home.loadURL('http://localhost:3000');
-    } else {
-        home.loadURL(url.format({
-            pathname: path.join(__dirname, '../../render/build/index.html')
-        }))
-    }
+    
+    home.loadURL(url.format({
+        pathname: path.join(__dirname, '../../render/pages/home/index.html')
+    }))
+    
 };
 
 const send = (channel, ...args) => {

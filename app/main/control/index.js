@@ -11,7 +11,7 @@ const create = () => {
             nodeIntegration: true
         }
     });
-    control.loadFile(path.resolve(__dirname, '../../render/static/control.html'))
+    control.loadFile(path.resolve(__dirname, '../../render/pages/control/index.html'))
 };
 
 module.exports = {
