@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server/index.js",
     "start": "electron ./app/main",
     "build": "electron-packager ./ myapp --out ./win --electron-version 10.1.5 --overwrite"
   },
