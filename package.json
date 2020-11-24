@@ -24,6 +24,7 @@
     "electron-packager": "^15.1.0"
   },
   "dependencies": {
-    "electron-is-dev": "^1.2.0"
+    "electron-is-dev": "^1.2.0",
+    "ws": "^7.4.0"
   }
 }
