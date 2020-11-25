@@ -2,12 +2,12 @@
   "name": "electron_project",
   "version": "1.0.0",
   "description": "electron尝鲜",
-  "main": "main.js",
+  "main": "./app/main/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server/index.js",
+    "server": "nodemon server/index.js",
     "start": "electron ./app/main",
-    "build": "electron-packager ./ myapp --out ./win --electron-version 10.1.5 --overwrite"
+    "build": "electron-packager ./ elepro --out ./win --electron-version 10.1.5 --overwrite --icon=./favicon.ico"
   },
   "homepage": ".",
   "repository": {
